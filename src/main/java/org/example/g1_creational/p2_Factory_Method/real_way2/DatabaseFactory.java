@@ -4,7 +4,7 @@ public class DatabaseFactory {
 
     /**
      * Фабричный метод
-     * P.S.: есть нарущение OCP (Open/Closed Principal 2). Лушче сделать абстрактным фабричный методом
+     * P.S.: есть нарушение OCP (Open/Closed Principal 2). Лучше сделать абстрактным фабричный метод
      * и вынести создание объектов в отдельные классы.
      */
     public static Database createDatabase(String type) {

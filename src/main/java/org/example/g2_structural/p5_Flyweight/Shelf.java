@@ -3,11 +3,11 @@ package org.example.g2_structural.p5_Flyweight;
 import lombok.RequiredArgsConstructor;
 
 /**
- * Класс BookOnShelf (полка) представляет конкретный экземпляр книги на полке.
+ * Класс Shelf (полка) представляет конкретный экземпляр книги на полке.
  * Хранит внешнее состояние.
  */
 @RequiredArgsConstructor
-public class BookOnShelf {
+public class Shelf {
 
     private final String shelfNumber;                   // Номер полки
     private final int position;                         // Место на полке

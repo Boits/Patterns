@@ -5,17 +5,17 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class ClubbedTrollDecorator implements Troll {
 
-    private final Troll decorator;
+    private final Troll originalTroll;
 
     @Override
     public void attack() {
-        decorator.attack();
+        originalTroll.attack();
         System.out.println("The troll swings at you with a club!");
     }
 
     @Override
     public int getAttackPower() {
-        return decorator.getAttackPower() + 10;
+        return originalTroll.getAttackPower() + 10;
     }
 
 }

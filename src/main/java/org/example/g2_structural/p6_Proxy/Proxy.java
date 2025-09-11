@@ -11,7 +11,7 @@ public class Proxy implements Subject {
 
     @Override
     public void request() {
-        if (userRole.equals("ADMIN")) {
+        if ("ADMIN".equals(userRole)) {
             if (realSubject == null) {
                 realSubject = new RealSubject(); // Ленивое создание реального объекта
             }

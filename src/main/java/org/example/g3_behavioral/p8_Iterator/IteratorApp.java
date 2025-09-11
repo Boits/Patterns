@@ -4,6 +4,7 @@ public class IteratorApp {
 
     public static void call() {
         LibraryCollection library = new LibraryCollection();
+
         library.addBook(new Book("1984"));
         library.addBook(new Book("Brave New World"));
         library.addBook(new Book("Fahrenheit 451"));

@@ -6,11 +6,11 @@ import java.util.List;
 /**
  * Composite объект.
  */
-public class FolderComposite implements FileSystemComponent {
+public class Folder implements FileSystemComponent {
     private final String name;
     private final List<FileSystemComponent> components = new ArrayList<>();
 
-    public FolderComposite(String name) {
+    public Folder(String name) {
         this.name = name;
     }
 

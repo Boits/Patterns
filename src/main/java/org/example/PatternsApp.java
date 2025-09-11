@@ -1,7 +1,13 @@
 package org.example;
 
+import org.example.g1_creational.p1_Builder.BuilderApp;
 import org.example.g1_creational.p2_Factory_Method.FactoryMethodApp;
+import org.example.g1_creational.p3_Prototype.PrototypeApp;
+import org.example.g1_creational.p4_Abstract_Factory.AbstractFactoryApp;
 import org.example.g1_creational.p5_Singleton.SingletonApp;
+import org.example.g2_structural.p1_Decorator.DecoratorApp;
+import org.example.g2_structural.p2_Composite.CompositeApp;
+import org.example.g2_structural.p3_Adapter.AdapterApp;
 import org.example.g2_structural.p4_Facade.FacadeApp;
 import org.example.g2_structural.p5_Flyweight.FlyweightApp;
 import org.example.g2_structural.p6_Proxy.ProxyApp;

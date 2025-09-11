@@ -16,10 +16,10 @@ public class BridgeApp {
 
     public static void call() {
         //Типы уведомлений и способы доставки
-//        way1();
+        way1();
 
         //Разные устройства и разные типы пультов
-        way2();
+//        way2();
     }
 
     private static void way2() {

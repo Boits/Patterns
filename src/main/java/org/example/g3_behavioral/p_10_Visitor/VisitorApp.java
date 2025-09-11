@@ -6,6 +6,7 @@ import org.example.g3_behavioral.p_10_Visitor.element.Image;
 import org.example.g3_behavioral.p_10_Visitor.element.Video;
 import org.example.g3_behavioral.p_10_Visitor.visitor.ContentAnalyzer;
 import org.example.g3_behavioral.p_10_Visitor.visitor.ContentPublisher;
+import org.example.g3_behavioral.p_10_Visitor.visitor.ContentVisitor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,11 +20,11 @@ public class VisitorApp {
         contents.add(new Video("videos/tutorial.mp4"));
 
         // Анализ контента
-        ContentAnalyzer analyzerVisitor = new ContentAnalyzer();
+        ContentVisitor analyzerVisitor = new ContentAnalyzer();
         contents.forEach(c -> c.accept(analyzerVisitor));
 
         // Публикация контента
-        ContentPublisher publisherVisitor = new ContentPublisher();
+        ContentVisitor publisherVisitor = new ContentPublisher();
         contents.forEach(c -> c.accept(publisherVisitor));
     }
 }

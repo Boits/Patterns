@@ -2,7 +2,7 @@ package org.example.g2_structural.p2_Composite;
 
 import org.example.g2_structural.p2_Composite.letterSystem.Messenger;
 import org.example.g2_structural.p2_Composite.folderSystem.File;
-import org.example.g2_structural.p2_Composite.folderSystem.FolderComposite;
+import org.example.g2_structural.p2_Composite.folderSystem.Folder;
 
 public class CompositeApp {
 
@@ -21,9 +21,9 @@ public class CompositeApp {
         File file3 = new File("File3.txt");
 
         // Создание папок
-        FolderComposite folder1 = new FolderComposite("Folder1");
-        FolderComposite folder2 = new FolderComposite("Folder2");
-        FolderComposite rootFolder = new FolderComposite("RootFolder");
+        Folder folder1 = new Folder("Folder1");
+        Folder folder2 = new Folder("Folder2");
+        Folder rootFolder = new Folder("RootFolder");
 
         // Добавление файлов и папок в другие папки
         folder1.addComponent(file1);

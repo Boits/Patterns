@@ -9,8 +9,8 @@ import java.util.List;
  * Context (Контекст), который использует стратегию
  */
 public class Cart {
-    private final List<Item> items = new ArrayList<>();
     private PaymentStrategy paymentStrategy;
+    private final List<Item> items = new ArrayList<>();
 
     public void addItem(Item item) {
         items.add(item);
