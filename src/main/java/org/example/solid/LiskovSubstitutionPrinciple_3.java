@@ -4,7 +4,7 @@ public class LiskovSubstitutionPrinciple_3 {
 }
 
 /**
- * Нарушение LSP
+ * Нарушение LSP:
  */
 class Bird {
     public void fly() {
@@ -20,53 +20,24 @@ class Penguin extends Bird {
 }
 
 /**
- * Решение
- */
-
-abstract class Bird2 {
-    public abstract void move();
-}
-
-class FlyingBird extends Bird2 {
-    @Override
-    public void move() {
-        fly();
-    }
-
-    public void fly() {
-        System.out.println("The bird is flying");
-    }
-}
-
-class Penguin2 extends Bird2 {
-    @Override
-    public void move() {
-        swim();
-    }
-
-    public void swim() {
-        System.out.println("The penguin is swimming");
-    }
-}
-/**
- * Или такое решение:
+ * Решение LSP:
  */
 
 interface Flyable {
     void fly();
 }
 
-class Bird3 {
+class Bird2 {
     // Основные свойства и методы для всех птиц
 }
 
-class Sparrow extends Bird3 implements Flyable {
+class Sparrow extends Bird2 implements Flyable {
     @Override
     public void fly() {
         System.out.println("Sparrow is flying");
     }
 }
 
-class Penguin3 extends Bird3 {
+class Penguin2 extends Bird2 {
     // Пингвин не реализует Flyable, потому что он не может летать
 }

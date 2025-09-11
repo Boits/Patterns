@@ -4,7 +4,7 @@ public class OpenClosedPrinciple_2 {
 }
 
 /**
- * Нарушение OCP
+ * Нарушение OCP:
  */
 class NotificationService {
     public void sendNotification(String type) {
@@ -17,7 +17,7 @@ class NotificationService {
     }
 }
 /**
- * Можно добавлять новые уведомления, не изменяя существующий код.
+ * Решение: Можно добавлять новые уведомления, не изменяя существующий код
  */
 interface Notification {
     void send();
