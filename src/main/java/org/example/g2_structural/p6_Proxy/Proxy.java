@@ -1,5 +1,7 @@
 package org.example.g2_structural.p6_Proxy;
 
+import java.util.Objects;
+
 public class Proxy implements Subject {
     private RealSubject realSubject; // Ссылка на реальный объект
     private final String userRole;
@@ -12,7 +14,7 @@ public class Proxy implements Subject {
     @Override
     public void request() {
         if ("ADMIN".equals(userRole)) {
-            if (realSubject == null) {
+            if (Objects.isNull(realSubject)) {
                 realSubject = new RealSubject(); // Ленивое создание реального объекта
             }
             realSubject.request();
